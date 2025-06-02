@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Chickens' ;
+            src: url('../../fonts/Chickens\ Lovers.otf') format('opentype'),
+            url('../../fonts/Chickens\ Lovers.ttf') format('truetype');
+}
+
+
+body {
+    background-image: linear-gradient(#d0b4fa, #dac3fc, #e4d3ff, #f8f3ff);
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(133, 133, 182, 0.808);
+    min-width: 350px;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Aulas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-height: 300px;
+    max-height: 500px;
+}
+
+h1 {
+    background-image: linear-gradient(to right, blueviolet, transparent);
+    font-family: 'Chickens', serif;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 6.5px;
+
+}
+
+li:hover {
+    background-color: #8e96ff85;
+    transform: scale(1.05);
+    max-width: 350px;
+    transition-duration: 1s;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+div.audio {
+    margin: auto;
+    padding: 30px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            background-color: rgb(252, 191, 167);
+            height: 300px;
+            width: 300px;
+            /*Abaixo vemos o exemplo de shorthand*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkred;
+
+            border: 10px solid darkred;
+            
+            /*Abaixo vemos outro exemplo de shorthand*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px;
+
+            margin: auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        a { /*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        p#inicial {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p id="inicial">Também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p> 
+    <p>Utilizando as ferramentas de desenvolvedor do navegador, é possível alterar as configurações visuais para mudar o visual.</p>
+    <p>É possível alterar o display para block, inline e inline-block independente do tipo de level.</p>
+</body>
+</html>

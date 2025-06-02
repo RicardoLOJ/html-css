@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam sozinhas</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+   
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="./midia/the a la menthe.MP3" type="audio/mpeg">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="./midia/the a la menthe.MP3">Clique aqui para baixar o arquivo MP3</a></p>
+    
+    <br><br>
+    <p><a href="../index.html" rel="prev" target="_self">Voltar</a></p>
+</body>
+</html>
