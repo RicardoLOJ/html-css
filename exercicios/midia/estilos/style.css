@@ -6,6 +6,10 @@
             url('../../fonts/Chickens\ Lovers.ttf') format('truetype');
 }
 
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Chickens', serif;
+}
 
 body {
     background-image: linear-gradient(#d0b4fa, #dac3fc, #e4d3ff, #f8f3ff);
@@ -24,14 +28,14 @@ main {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte1);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
 .Aulas {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte1);
     font-size: 20px;
     min-height: 300px;
     max-height: 500px;
@@ -39,7 +43,7 @@ p {
 
 h1 {
     background-image: linear-gradient(to right, blueviolet, transparent);
-    font-family: 'Chickens', serif;
+    font-family: var(--fonte2);
     font-size: 3em;
     font-weight: normal;
     text-align: center;
@@ -63,7 +67,7 @@ ul {
 }
 
 li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte1);
     font-size: 15px;
     margin-bottom: 6.5px;
 
@@ -83,4 +87,19 @@ abbr {
 div.audio {
     margin: auto;
     padding: 30px;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > a:hover {
+    text-decoration: underline;
 }
