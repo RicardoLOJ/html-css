@@ -15,6 +15,7 @@ body {
     background-image: linear-gradient(#d0b4fa, #dac3fc, #e4d3ff, #f8f3ff);
     background-attachment: fixed;
     margin-bottom: 0px;
+    margin: 0px;
 }
 
 main {
