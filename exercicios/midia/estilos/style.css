@@ -87,13 +87,14 @@ abbr {
 
 div.audio {
     margin: auto;
-    padding: 30px;
+    padding: 30px 30px 5px;
 }
 
 footer {
     background-color: blueviolet;
     color: white;
     text-align: center;
+    
 }
 
 footer > a {
