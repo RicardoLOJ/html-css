@@ -18,3 +18,15 @@ botoesModulos.forEach(botao => {
     if (novaAula) novaAula.classList.add("ativo");
   });
 });
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', () => {
+      const audio = document.getElementById('som');
+      if (audio.paused) {
+        audio.play();
+      }
+    }, { once: true });
+  });

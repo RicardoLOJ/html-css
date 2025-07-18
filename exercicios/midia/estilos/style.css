@@ -2,8 +2,8 @@
 
 @font-face {
     font-family:'Chickens' ;
-            src: url('../../fonts/Chickens\ Lovers.otf') format('opentype'),
-            url('../../fonts/Chickens\ Lovers.ttf') format('truetype');
+            src: url('../../fonts/Chickens Lovers.otf') format('opentype'),
+            url('../../fonts/Chickens Lovers.ttf') format('truetype');
 }
 
 :root {
@@ -22,8 +22,8 @@
 body {
     background-image: linear-gradient(var(--cor2), var(--cor3), var(--cor4), var(--cor5));
     background-attachment: fixed;
-    margin-bottom: 0px;
     margin: 0px;
+    height: 100%;
 }
 
 main {
@@ -111,6 +111,7 @@ a {
 .modulo-btn.ativo {
     background-color: var(--cor1);
     color: var(--corl);
+    font-weight: bold;
 }
 
 
@@ -131,14 +132,16 @@ li:hover {
     background-color: #8e96ff85;
     transform: scale(1.05);
     max-width: 350px;
-    transition-duration: 1s;
+    transition-duration: all 0.3s ease;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 abbr {
     text-decoration: none;
 }
 
-div.audio {
+.audio {
     margin: auto;
     padding: 40px 30px 28px;
 }
