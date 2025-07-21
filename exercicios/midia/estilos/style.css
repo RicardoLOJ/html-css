@@ -23,7 +23,6 @@ body {
     background-image: linear-gradient(var(--cor2), var(--cor3), var(--cor4), var(--cor5));
     background-attachment: fixed;
     margin: 0px;
-    height: 100%;
 }
 
 main {
@@ -60,9 +59,9 @@ p {
 
 .Aulas {
     font-family: var(--fonte1);
-    font-size: 20px;
     min-height: 300px;
     max-height: 400px;
+    font-size: 15px;
 }
 
 a {
@@ -85,6 +84,10 @@ a {
 #Aulas-modulo2, #Aulas-modulo3, #Aulas-modulo4 {
     padding-left: 25%;
     padding-top: 20px;
+}
+
+button {
+    font-size: 16px;
 }
 
 .modulos-nav {
@@ -114,7 +117,17 @@ a {
     font-weight: bold;
 }
 
+.exercicios:hover .licoes {
+    display: block;
+}
 
+.licoes {
+    display: none;
+    font-size: 12px;
+    list-style-type: none;
+    max-width: 100px;
+    text-align: center;
+}
 
 ul {
     list-style-type: '\2714\00A0\00A0';
@@ -123,7 +136,7 @@ ul {
 
 li {
     font-family: var(--fonte1);
-    font-size: 15px;
+
     margin-bottom: 6.5px;
 
 }
