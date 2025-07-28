@@ -156,7 +156,7 @@ abbr {
 
 .audio {
     margin: auto;
-    padding: 40px 30px 28px;
+    padding: 37px 30px 28px;
 }
 
 footer {
@@ -173,3 +173,4 @@ footer > a {
 footer > a:hover {
     text-decoration: underline;
 }
+
