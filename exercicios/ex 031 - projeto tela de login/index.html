@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>
+                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">login</span>
+                        <input type="email" name="login" id="ilogin" required autocomplete="email" placeholder="seu e-mail">
+                        <label for="ilogin"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">password</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="sua senha" autocomplete="current-password">
+                        <label for="isenha"></label>
+                    </div>
+                
+                        <input type="submit" value="Entrar">
+                    
+                        <p><a href="esqueci.html">Esqueci a senha</a><span class="material-symbols-outlined">mail</span></p> 
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
