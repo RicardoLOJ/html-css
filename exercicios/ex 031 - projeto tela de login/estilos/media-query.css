@@ -18,6 +18,7 @@ Extra-Large Screen: Acima de 1440px
 
     section#login {
         width: 80%;
+        height: 280px;
     }
 
     section#login > div#imagem {
@@ -40,6 +41,7 @@ Extra-Large Screen: Acima de 1440px
 
     section#login {
         width: 1020px;
+        height: 350px;
     }
 
     section#login > div#imagem {
@@ -59,5 +61,6 @@ Extra-Large Screen: Acima de 1440px
 
     div#formulario > p {
     font-size: 1.2em;
+    padding: 5px 0px;
     }
 }
