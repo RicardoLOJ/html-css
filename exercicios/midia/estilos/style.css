@@ -62,8 +62,8 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(133, 133, 182, 0.808);
-    min-width: 350px;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 350px;
     padding: 10px;
     margin: auto;
 }
