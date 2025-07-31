@@ -16,13 +16,46 @@
     --cor3: #dac3fc;
     --cor4: #e4d3ff;
     --cor5: #ffffff;
-    --corl: white
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    background-image: linear-gradient(var(--cor2), var(--cor3), var(--cor4), var(--cor5));
+    background-color: var(--cor4);
     background-attachment: fixed;
     margin: 0px;
+}
+
+h1 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: var(--fonte1);
+    font-size: 1em;
+    text-align: center;
 }
 
 main {
@@ -30,37 +63,14 @@ main {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(133, 133, 182, 0.808);
     min-width: 350px;
-    max-width: 700px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
 }
 
-h1 {
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    font-family: var(--fonte2);
-    font-size: 3em;
-    font-weight: normal;
-    text-align: center;
-    margin-top: 0px;
-}
-
-h2 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-p {
-    font-family: var(--fonte1);
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .Aulas {
     font-family: var(--fonte1);
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 250px;
     font-size: 15px;
 }
 
@@ -78,7 +88,7 @@ a {
 
 #Aulas-modulo1 {
     columns: 2;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 #Aulas-modulo2, #Aulas-modulo3, #Aulas-modulo4 {
@@ -87,7 +97,7 @@ a {
 }
 
 button {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .modulos-nav {
@@ -113,7 +123,7 @@ button {
 
 .modulo-btn.ativo {
     background-color: var(--cor1);
-    color: var(--corl);
+    color: var(--cor5);
     font-weight: bold;
 }
 
@@ -136,18 +146,16 @@ ul {
 
 li {
     font-family: var(--fonte1);
-
-    margin-bottom: 6.5px;
-
+    margin-bottom: 2px;
 }
 
 li:hover {
     background-color: #8e96ff85;
-    transform: scale(1.05);
     max-width: 350px;
-    transition-duration: all 0.3s ease;
     border-radius: 10px;
     font-weight: bold;
+    transform: scale(1.05);
+    transition-duration: all 0.3s ease;
 }
 
 abbr {
@@ -155,19 +163,19 @@ abbr {
 }
 
 .audio {
-    margin: auto;
-    padding: 37px 30px 28px;
+    padding: 27px 30px 10px 10px;
 }
 
 footer {
     background-color: var(--cor1);
-    color: var(--corl);
+    color: var(--cor5);
     text-align: center;
+    font-size: .8em;
 }
 
 footer > a {
     text-decoration: none;
-    color: var(--corl);
+    color: var(--cor5);
 }
 
 footer > a:hover {
