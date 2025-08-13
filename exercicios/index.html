@@ -7,9 +7,10 @@
     <title>Exercícios Realizados</title>
     <link rel="stylesheet" href="./midia/estilos/style.css">
     <link rel="stylesheet" href="./midia/estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <div class="container">
         <header>
             <h1>Página para visualizar todo conteúdo aprendido</h1>
@@ -20,7 +21,8 @@
         <h2>Links das aulas</h2>
         <main>
             <div class="Modulos">
-                <nav class="modulos-nav">
+                <nav class="modulos-nav" id="itens">
+                    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
                     <button class="modulo-btn ativo" id="modulo1">Módulo 1</button>
                     <button class="modulo-btn" id="modulo2">Módulo 2</button>
                     <button class="modulo-btn" id="modulo3">Módulo 3</button>

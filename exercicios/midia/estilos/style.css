@@ -71,7 +71,7 @@ main {
 .Aulas {
     font-family: var(--fonte1);
     min-height: 250px;
-    font-size: 15px;
+    font-size: .7em;
 }
 
 a {
@@ -92,7 +92,6 @@ a {
 }
 
 #Aulas-modulo2, #Aulas-modulo3, #Aulas-modulo4, #Aulas-modulo5 {
-    padding-left: 25%;
     padding-top: 20px;
 }
 
@@ -106,6 +105,8 @@ button {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
+
+
 
 .modulo-btn {
     background-color: var(--cor3);
