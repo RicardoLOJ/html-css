@@ -58,6 +58,21 @@ p {
     text-align: center;
 }
 
+span#burguer {
+    background-color: var(--cor3);
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+}
+
+span#burguer:hover {
+    background-color: var(--cor1);
+    color: white;
+} 
+
 main {
     background-color: white;
     border-radius: 10px;
