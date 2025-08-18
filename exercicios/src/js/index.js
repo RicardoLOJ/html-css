@@ -43,32 +43,32 @@ function atualizarMenu() {
     const largura = window.innerWidth;
 
     if (largura > 600) {
-        // Desktop: módulos sempre visíveis, burguer oculto
-        botoes.forEach(btn => btn.style.display = 'inline-block');
+        // Desktop: deixa o CSS controlar (inline, flex, etc.)
+        botoes.forEach(btn => btn.style.display = '');
         menuBurguer.style.display = 'none';
     } else {
-        // Mobile: módulos ocultos por padrão, burguer visível
+        // Mobile: módulos sempre escondidos no início
         botoes.forEach(btn => btn.style.display = 'none');
         menuBurguer.style.display = 'block';
     }
 }
 
 function clickMenu() {
-    // Alterna a visibilidade dos módulos no mobile
+    // Alterna a visibilidade no mobile
     botoes.forEach(btn => {
         btn.style.display = (btn.style.display === 'none' || btn.style.display === '') 
-            ? 'block' 
-            : 'none';
+            ? 'block'   // abre em coluna
+            : 'none';   // fecha
     });
 }
 
 // Evento de clique no burguer
 menuBurguer.addEventListener('click', clickMenu);
 
-// Evento de redimensionamento da tela
+// Evento de redimensionamento
 window.addEventListener('resize', atualizarMenu);
 
-// Chama ao carregar a página
+// Ao carregar
 atualizarMenu();
 
 
