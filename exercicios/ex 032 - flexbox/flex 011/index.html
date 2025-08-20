@@ -17,22 +17,20 @@
             border: 1px solid black;
             text-align: center;
             
-            flex-basis: 200px;
         }
 
         div#cxA {
-            flex-shrink: 1;
-            flex-grow: 0;
+            flex: 0 1 150px; /* A tag FLEX é um short-hands de:
+            flex-grow, flex-shrink, flex-basis. 
+            Exatamente nessa ordem */
         }
 
         div#cxB {
-            flex-shrink: 1;
-            flex-grow: 2;
+            flex: 2 1 150px;
         }
 
         div#cxC {
-            flex-shrink: 0;
-            flex-grow: 1;
+            flex: 1 0 150px;
         }
     </style>
 </head>
