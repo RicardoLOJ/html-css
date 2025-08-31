@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+
+            /*Primeiro as linhas e depois as colunas*/
+            grid-template: repeat(3, 100px) / repeat(3, 1fr);
+            /*A propriedade "repeat" serve, obviamente, para repetir e quantificar propriedades similares.
+            Ao invés de utilizar auto, pode ser usado também a fração "1fr"*/
+
+            /*Primeiro align-items e depois justify-items*/
+            place-items: stretch normal;
+            /*A propriedade normal é a padrão! Neste caso, stretch*/
+
+            /*Primeiro align-content e depois o justify-content*/
+            place-content: stretch normal;
+
+            /*Espaçamento entre os items do container*/
+            gap: 10px;
+        }
+
+        .item {
+            border: 2px solid blue;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .text {
+            margin-top: 20px;
+
+            border: 2px dotted red;
+            color: red;
+
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px rgba(255, 84, 84, 0.541);
+            
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+    <div class="text">Leia o código para analisar a diferença entre as declarações!</div>
+</body>
+</html>
