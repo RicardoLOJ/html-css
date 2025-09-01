@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+
+    gap: 5px;
+
+    border: 2px dotted rgba(0, 0, 0, 0.315);
+}
+
+.a {
+    background-color: rgb(255, 181, 181);
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.b {
+    background-color: rgba(88, 128, 88, 0.473);
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.c {
+    background-color: rgba(137, 137, 255, 0.678);
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}

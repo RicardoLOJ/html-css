@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top, gray, #bebcbc, #e4e4e4, white, white, white);
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+
+    gap: 5px;
+
+    border: 2px dotted rgba(0, 0, 0, 0.315);
+}
+
+.a, .b, .c {
+    text-align: center;
+}
+
+.a {
+    background-color: rgb(255, 181, 181);
+
+    /*
+
+    Grid-Area define na seguinte ordem:
+    grid-row-start / grid-column-start / grid-row-end / grid-column-end
+    
+    */
+
+    grid-area: 1 / 1 / 2 / 5;
+
+    padding-top: 35px;
+}
+
+.b {
+    background-color: rgba(88, 128, 88, 0.473);
+
+    grid-area: 2 / 1 / 4 / 3;
+
+    padding-top: 90px;
+}
+
+.c {
+    background-color: rgba(137, 137, 255, 0.678);
+
+    grid-area: 2 / 3 / 4 / 5;
+    
+    padding-top: 90px;
+}
