@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    border: 2px dotted black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 50vw auto;
+}
+
+section {
+    grid-column: 2;
+    padding: 20px;
+}
+
+a {
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: darkviolet;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
