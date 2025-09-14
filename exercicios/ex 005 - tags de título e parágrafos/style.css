@@ -6,10 +6,6 @@ body {
     height: 98vh;
 }
 
-img {
-    max-width: 100px;
-}
-
 footer {
     display: flex;
     justify-content: center;
@@ -21,7 +17,7 @@ ul {
     display: flex;
 }
 
-a {
+li > a {
     text-decoration: none;
     color: black;
     display: block;
@@ -39,7 +35,7 @@ a:hover {
 }
 
 a.active {
-    background: #dac3fc;;
+    background: #dac3fc;
     font-weight: bold;
     box-shadow: 2px 2px 2px #00000075;
 }
