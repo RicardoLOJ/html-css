@@ -50,6 +50,9 @@ Extra-Large Screen: Acima de 1440px
 
     .modulos-nav {
         font-size: .9em;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     .modulos-nav > button {
@@ -103,6 +106,12 @@ Extra-Large Screen: Acima de 1440px
 
     span#burguer {
         display: none;
+    }
+
+    nav#itens {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     .modulos-nav > button {

@@ -39,12 +39,12 @@ botoesModulos.forEach(botao => {
 const menuBurguer = document.querySelector('#menu-burguer'); // ícone burguer
 const botoes = document.querySelectorAll('.modulos-nav > button'); // módulos
 
-function atualizarMenu() {
+function mudouTamanho() {
     const largura = window.innerWidth;
 
     if (largura > 600) {
         // Desktop: deixa o CSS controlar (inline, flex, etc.)
-        botoes.forEach(btn => btn.style.display = '');
+        botoes.forEach(btn => btn.style.display = 'block');
         menuBurguer.style.display = 'none';
     } else {
         // Mobile: módulos sempre escondidos no início
@@ -66,9 +66,9 @@ function clickMenu() {
 menuBurguer.addEventListener('click', clickMenu);
 
 // Evento de redimensionamento
-window.addEventListener('resize', atualizarMenu);
+window.addEventListener('resize', mudouTamanho);
 
 // Ao carregar
-atualizarMenu();
+mudouTamanho();
 
 
